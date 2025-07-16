@@ -1,5 +1,5 @@
 body {
-  padding-top: 100px; /* Adjust this value as per navbar height */
+  padding-top: 80px; /* Adjust this value as per navbar height */
 }
 
 .nav-link {
@@ -27,4 +27,19 @@ body {
   }
   
      
+
+/* Slides CSS */
+ 
+.carousel-item {
+    border : 1px solid #ddd; 
+  background-color: #f9f9f9; 
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+
 
