@@ -1,0 +1,26 @@
+.nav-link {
+      font-weight: 20;
+      margin: 0 3px;
+    }
+
+    .icon-btn {
+      margin-left: 20px;
+    }
+
+     @media (max-width: 991.98px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+
+    .navbar-nav {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .icon-btn {
+      margin: 10px auto;
+    }
+  }
+  
+     
+
