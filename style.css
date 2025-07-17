@@ -1,6 +1,9 @@
 body {
-  padding-top: 80px; /* Adjust this value as per navbar height */
+  padding-top: 80px; 
+  background-color: #f5f5f5;
+
 }
+
 
 .nav-link {
       font-weight: 20;
@@ -41,5 +44,75 @@ body {
   display: none !important;
 }
 
+/* Big dicount */
+.card {
+      position: relative;
+      background-color: #ffffff;
+      border: none;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
 
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
+    .card-img-top {
+      max-height: 180px;
+      object-fit: contain;
+      padding: 1rem;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .discount-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #003366;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 20px;
+    }
+
+    .wishlist-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.2rem;
+      color: red;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover .wishlist-icon {
+      opacity: 1;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-text {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .price {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #000;
+      margin-top: 6px;
+    }
+
+    .rating {
+      color: #f5c518;
+      font-size: 0.85rem;
+    }
+
+  
