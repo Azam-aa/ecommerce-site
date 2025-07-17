@@ -1,42 +1,38 @@
 body {
-  padding-top: 78px; 
+  padding-top: 78px;
   background-color: #8e8b8b22 !important;
-
 }
 
 .nav-link {
-      font-weight: 20;
-      margin: 0 3px;
-    }
-
-    .icon-btn {
-      margin-left: 20px;
-    }
-
-     @media (max-width: 991.98px) {
-    .navbar-collapse {
-      text-align: center;
-    }
-
-    .navbar-nav {
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .icon-btn {
-      margin: 10px auto;
-    }
-  }
-  
-     
-
-/* Slides CSS */
- 
-.carousel-item {
-    border : 1px solid #ddd; 
-  background-color: #f9f9f9; 
+  font-weight: 20;
+  margin: 0 3px;
 }
 
+.icon-btn {
+  margin-left: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .icon-btn {
+    margin: 10px auto;
+  }
+}
+
+/* Slides CSS */
+
+.carousel-item {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -45,72 +41,86 @@ body {
 
 /* Big dicount */
 .card {
-      position: relative;
-      background-color: #ffffff;
-      border: none;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
-    }
+  position: relative;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+.card:hover {
+  transform: translateY(-5px);
+}
 
-    .card-img-top {
-      max-height: 180px;
-      object-fit: contain;
-      padding: 1rem;
-    }
+.card-img-top {
+  max-height: 180px;
+  object-fit: contain;
+  padding: 1rem;
+}
 
-    .card-body {
-      padding: 1rem;
-    }
+.card-body {
+  padding: 1rem;
+}
 
-    .discount-badge {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background-color: #003366;
-      color: #fff;
-      font-size: 0.7rem;
-      padding: 3px 8px;
-      border-radius: 20px;
-    }
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #003366;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
 
-    .wishlist-icon {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 1.2rem;
-      color: red;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      cursor: pointer;
-    }
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
 
-    .card:hover .wishlist-icon {
-      opacity: 1;
-    }
+.card:hover .wishlist-icon {
+  opacity: 1;
+}
 
-    .card-title {
-      font-size: 1rem;
-      font-weight: 600;
-    }
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
 
-    .card-text {
-      font-size: 0.85rem;
-      color: #666;
-    }
+.card-text {
+  font-size: 0.85rem;
+  color: #666;
+}
 
-    .price {
-      font-weight: 600;
-      font-size: 1rem;
-      color: #000;
-      margin-top: 6px;
-    }
+.price {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+  margin-top: 6px;
+}
 
-    .rating {
-      color: #f5c518;
-      font-size: 0.85rem;
-    }
-  
+.rating {
+  color: #f5c518;
+  font-size: 0.85rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #0c2c57;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
