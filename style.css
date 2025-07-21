@@ -34,10 +34,37 @@ body {
   background-color: #f9f9f9;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  display: none !important;
+/* ****************** + icon  **************** */
+
+.add-to-cart-btn {
+  /* Positioning rules */
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  
+  /* Existing styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  color: #6c757d;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
+
+.add-to-cart-btn:hover {
+  background-color: #f0f0f0; 
+  color: #212529;
+  border-color: #ddd;
+}
+
+/* ******* New Arrivals ************ */
+
 
 /* Big dicount */
 .card {
@@ -55,6 +82,7 @@ body {
 .card-img-top {
   max-height: 180px;
   object-fit: contain;
+  padding: 1rem;
   padding: 1rem;
 }
 
@@ -124,6 +152,10 @@ body {
   color: white;
   text-decoration: underline;
 }
+.footer-mart-icon {
+  width: 35px;
+  height: 24px;
+  margin-right: 8px; }
 
 
 
