@@ -24,7 +24,7 @@ You will need a code editor (like VS Code) and a modern web browser.
 ### Installation & Setup
 1.  **Clone the repository** to your local machine:
     ```sh
-    git clone [https://github.com/Azam-aa/ecommerce-site.git](https://github.com/Azam-aa/ecommerce-site.git)
+    git clone https://github.com/Azam-aa/ecommerce-site.git
     ```
 2.  **Navigate** to the project directory:
     ```sh
