@@ -1,7 +1,25 @@
+/******************* General Body & HTML Styles *****************/
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding-top: 78px;
   background-color: #8e8b8b22 !important;
+  display: flex;
+  flex-direction: column;
 }
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+/******************* Navigation Bar Styles *****************/
 
 .nav-link {
   font-weight: 20;
@@ -27,46 +45,8 @@ body {
   }
 }
 
-/* Slides CSS */
+/******************* General Card Styles *****************/
 
-.carousel-item {
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-}
-
-/* ****************** + icon  **************** */
-
-.add-to-cart-btn {
-  /* Positioning rules */
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  
-  /* Existing styles */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  color: #6c757d;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.add-to-cart-btn:hover {
-  background-color: #f0f0f0; 
-  color: #212529;
-  border-color: #ddd;
-}
-
-/* ******* New Arrivals ************ */
-
-
-/* Big dicount */
 .card {
   position: relative;
   background-color: #ffffff;
@@ -82,12 +62,33 @@ body {
 .card-img-top {
   max-height: 180px;
   object-fit: contain;
-  padding: 1rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .card-body {
   padding: 1rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+  margin-top: 6px;
+}
+
+.rating {
+  color: #f5c518;
+  font-size: 0.85rem;
 }
 
 .discount-badge {
@@ -116,98 +117,107 @@ body {
   opacity: 1;
 }
 
-.card-title {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.card-text {
-  font-size: 0.85rem;
-  color: #666;
-}
-
-.price {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #000;
-  margin-top: 6px;
-}
-
-.rating {
-  color: #f5c518;
-  font-size: 0.85rem;
-}
-
-/* Footer */
-.footer {
-  background-color: #0c2c57;
-}
-
-.footer-link {
-  color: rgba(255, 255, 255, 0.8);
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  color: #6c757d;
+  font-size: 1.2rem;
+  font-weight: bold;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
-.footer-link:hover {
-  color: white;
-  text-decoration: underline;
+.add-to-cart-btn:hover {
+  background-color: #f0f0f0;
+  color: #212529;
+  border-color: #ddd;
 }
-.footer-mart-icon {
-  width: 35px;
-  height: 24px;
-  margin-right: 8px; }
 
+/******************* Index Page: Carousel Styles *****************/
 
+.carousel-item {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
 
-/* Shop.html */
+/******************* Shop & Product Info Page: Banner Styles *****************/
+
+.product-thumbnail-banner,
+.info-thumbnail-banner {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .product-thumbnail-banner {
-            width: 100%;
-            height: 250px; 
-            background-image: url('./images/products.png'); 
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333; 
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px; 
-        }
-
-.filter-section {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .search-bar .input-group {
-            width: 100%;
-        }
-        @media (max-width: 767.98px) {
-            .filter-section .dropdown,
-            .filter-section .search-bar {
-                margin-bottom: 15px;
-            }
-        }
+  background-image: url('./images/products.png');
+}
 
 .info-thumbnail-banner {
-            width: 100%;
-            height: 250px; 
-            background-image: url('./images/info.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333; 
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px; 
-        }
+  background-image: url('./images/info.png');
+}
 
 
-        /* Cart buttons + - * */.shopping-cart-item {
+/******************* Shop Page: Filter & Search Styles *****************/
+
+.filter-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar .input-group {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .filter-section .dropdown,
+  .filter-section .search-bar {
+    margin-bottom: 15px;
+  }
+}
+
+/******************* Product Info Page Styles *****************/
+
+.product-price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #dc3545;
+}
+
+.product-rating {
+  color: #ffc107;
+}
+
+.product-tabs .nav-link {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.product-tabs .nav-link.active {
+  color: #0d6efd;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/******************* Cart Page Styles *****************/
+
+.shopping-cart-item {
   background-color: #fff;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -289,4 +299,27 @@ body {
   background-color: #f8f9fa;
   color: #0d6efd;
   border-color: #0d6efd;
+}
+
+/******************* Footer Styles *****************/
+
+.footer {
+  background-color: #0c2c57;
+  width: 100%;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-mart-icon {
+  width: 35px;
+  height: 24px;
+  margin-right: 8px;
 }
