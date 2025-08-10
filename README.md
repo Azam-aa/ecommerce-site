@@ -57,7 +57,7 @@ ecommerce-site/
 * **`style.css`:** This file contains all the custom CSS rules for the project.
 * **`images/`:** This directory holds all the images, including the logo, icons, product photos, and banners.
 
-## How to Modify
+### How to Modify
 
 You are welcome to modify and build upon this project. To contribute:
 1.  **Fork** the Project.
