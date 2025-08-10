@@ -8,7 +8,7 @@ The website features several key pages:
 * A detailed **Product Information Page**.
 * A functional **Shopping Cart Page** to review selected items.
 
-## Technologies Used
+### Technologies Used
 This project is built exclusively with front-end technologies:
 * **HTML5**
 * **CSS3**
