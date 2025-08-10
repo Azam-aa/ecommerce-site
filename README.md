@@ -14,7 +14,7 @@ This project is built exclusively with front-end technologies:
 * **CSS3**
 * **Bootstrap 5**
 
-## Getting Started
+### Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
