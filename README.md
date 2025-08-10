@@ -34,7 +34,7 @@ You will need a code editor (like VS Code) and a modern web browser.
     * Simply open the `index.html` file in your web browser to view the site.
     * For a better development experience, you can use a live server extension (like "Live Server" in VS Code) to automatically reload the page when you make changes.
 
-## File Structure
+### File Structure
 
 The project is organized into a straightforward structure, with all pages at the root level and all assets in the `images` directory.
 
